@@ -40,19 +40,22 @@ namespace CombatWaterVehicles
 
         private void StartGame_Click(object sender, EventArgs e)
         {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
             List<List<Button>> myGrid = SetButtonsMyGrid();
             List<List<Button>> enemyGrid = SetButtonsEnemyGrid();
 
             for (int i = 0; i < 10; i++)
             {
-                myGrid[i][i].Text = "test";
-                enemyGrid[i][0].Text = "test";
+                for (int j = 0; j < 10; j++)
+                {
+                    myGrid[i][j].Text = "" + i;
+                    enemyGrid[i][j].Text = "" + j;
+                }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
 
         public List<List<Button>> SetButtonsMyGrid()
@@ -68,6 +71,7 @@ namespace CombatWaterVehicles
             myGrid[0].Add(MyBoard_F1);
             myGrid[0].Add(MyBoard_G1);
             myGrid[0].Add(MyBoard_H1);
+            myGrid[0].Add(MyBoard_I1);
             myGrid[0].Add(MyBoard_J1);
 
             myGrid.Add(new List<Button>());
@@ -194,6 +198,7 @@ namespace CombatWaterVehicles
             enemyGrid[0].Add(EnemyBoard_F1);
             enemyGrid[0].Add(EnemyBoard_G1);
             enemyGrid[0].Add(EnemyBoard_H1);
+            enemyGrid[0].Add(EnemyBoard_I1);
             enemyGrid[0].Add(EnemyBoard_J1);
 
             enemyGrid.Add(new List<Button>());

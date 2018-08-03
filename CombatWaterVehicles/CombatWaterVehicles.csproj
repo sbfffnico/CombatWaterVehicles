@@ -58,9 +58,6 @@
     <Compile Include="Interfaces.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SetGrid.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Ship.cs" />
     <Compile Include="Submarine.cs" />
     <EmbeddedResource Include="Form1.resx">
