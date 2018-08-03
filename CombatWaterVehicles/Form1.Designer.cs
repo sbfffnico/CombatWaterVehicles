@@ -106,7 +106,7 @@
             this.MyBoard_C5 = new System.Windows.Forms.Button();
             this.MyBoard_D4 = new System.Windows.Forms.Button();
             this.MyBoard_C4 = new System.Windows.Forms.Button();
-            this.MyBoard_b4 = new System.Windows.Forms.Button();
+            this.MyBoard_B4 = new System.Windows.Forms.Button();
             this.MyBoard_I5 = new System.Windows.Forms.Button();
             this.MyBoard_H5 = new System.Windows.Forms.Button();
             this.MyBoard_G5 = new System.Windows.Forms.Button();
@@ -904,13 +904,13 @@
             this.MyBoard_C4.TabIndex = 75;
             this.MyBoard_C4.UseVisualStyleBackColor = true;
             // 
-            // MyBoard_b4
+            // MyBoard_B4
             // 
-            this.MyBoard_b4.Location = new System.Drawing.Point(117, 296);
-            this.MyBoard_b4.Name = "MyBoard_b4";
-            this.MyBoard_b4.Size = new System.Drawing.Size(58, 53);
-            this.MyBoard_b4.TabIndex = 76;
-            this.MyBoard_b4.UseVisualStyleBackColor = true;
+            this.MyBoard_B4.Location = new System.Drawing.Point(117, 296);
+            this.MyBoard_B4.Name = "MyBoard_B4";
+            this.MyBoard_B4.Size = new System.Drawing.Size(58, 53);
+            this.MyBoard_B4.TabIndex = 76;
+            this.MyBoard_B4.UseVisualStyleBackColor = true;
             // 
             // MyBoard_I5
             // 
@@ -2441,6 +2441,7 @@
             this.StartGame.TabIndex = 248;
             this.StartGame.Text = "Start";
             this.StartGame.UseVisualStyleBackColor = true;
+            this.StartGame.Click += new System.EventHandler(this.StartGame_Click);
             // 
             // Form1
             // 
@@ -2618,7 +2619,7 @@
             this.Controls.Add(this.MyBoard_G5);
             this.Controls.Add(this.MyBoard_H5);
             this.Controls.Add(this.MyBoard_I5);
-            this.Controls.Add(this.MyBoard_b4);
+            this.Controls.Add(this.MyBoard_B4);
             this.Controls.Add(this.MyBoard_C4);
             this.Controls.Add(this.MyBoard_D4);
             this.Controls.Add(this.MyBoard_C5);
@@ -2696,6 +2697,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Combat Water Vehicles";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -2783,7 +2785,7 @@
         private System.Windows.Forms.Button MyBoard_C5;
         private System.Windows.Forms.Button MyBoard_D4;
         private System.Windows.Forms.Button MyBoard_C4;
-        private System.Windows.Forms.Button MyBoard_b4;
+        private System.Windows.Forms.Button MyBoard_B4;
         private System.Windows.Forms.Button MyBoard_I5;
         private System.Windows.Forms.Button MyBoard_H5;
         private System.Windows.Forms.Button MyBoard_G5;
