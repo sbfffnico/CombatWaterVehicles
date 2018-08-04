@@ -13,6 +13,12 @@ namespace CombatWaterVehicles
     public partial class Form1 : Form
     {
         private bool _turn = true; // true when its players turn
+        private bool _disableSetShipEventHandler = false;
+        private int _destroyerSet = 0;
+        private int _submarineSet = 0;
+        private int _cruiserSet = 0;
+        private int _battleshipSet = 0;
+        private int _carrierSet = 0;
 
         public bool Turn
         {
@@ -26,6 +32,95 @@ namespace CombatWaterVehicles
                 _turn = value;
             }
         }
+
+        public bool DisableSetShipEventHandler
+        {
+            get
+            {
+                return _disableSetShipEventHandler;
+            }
+            set
+            {
+                value = _disableSetShipEventHandler;
+            }
+        }
+
+        public int DestroyerSet
+        {
+            get
+            {
+                return _destroyerSet;
+            }
+            set
+            {
+                if (_destroyerSet < 2)
+                {
+                    _destroyerSet = value;
+                }
+            }
+        }
+
+        public int SubmarineSet
+        {
+            get
+            {
+                return _submarineSet;
+            }
+            set
+            {
+                if (_submarineSet < 3)
+                {
+                    _submarineSet = value;
+                }
+            }
+        }
+
+        public int CruiserSet
+        {
+            get
+            {
+                return _cruiserSet;
+            }
+            set
+            {
+                if (_cruiserSet < 3)
+                {
+                    _cruiserSet = value;
+                }
+            }
+        }
+
+        public int BattleshipSet
+        {
+            get
+            {
+                return _battleshipSet;
+            }
+            set
+            {
+                if (_battleshipSet < 4)
+                {
+                    _battleshipSet = value;
+                }
+            }
+        }
+
+        public int CarrierSet
+        {
+            get
+            {
+                return _carrierSet;
+            }
+            set
+            {
+                if (_carrierSet < 5)
+                {
+                    _carrierSet = value;
+                }              
+            }
+        }
+
+
 
         public Form1()
         {
@@ -55,6 +150,8 @@ namespace CombatWaterVehicles
 
         private void StartGame_Click(object sender, EventArgs e)
         {
+            DisableSetShipEventHandler = false;
+
             List<List<Button>> myGrid = SetButtonsMyGrid();
             List<List<Button>> enemyGrid = SetButtonsEnemyGrid();
 
@@ -330,6 +427,50 @@ namespace CombatWaterVehicles
             MessageBox.Show("O indicates an Open spot\n\nX indicates a hit ship\n\nSet of X's in red indicate a sunken ship", "Help");
         }
 
-        
+        private void SetShips(object sender, EventArgs e)
+        {
+            // will disable handler after ships are all placed
+            if (DisableSetShipEventHandler)
+            {
+                return;
+            }
+
+            Button b = (Button)sender;
+
+            if (DestroyerSet < 2)
+            {
+                MessageBox.Show("Select two spots to place Destroyer");
+                b.Text = "D";
+                DestroyerSet += 1;
+            }
+            else if (SubmarineSet < 3)
+            {
+                MessageBox.Show("Select three spots to place Submarine");
+                b.Text = "S";
+                SubmarineSet += 1;
+            }
+            else if (CruiserSet < 3)
+            {
+                MessageBox.Show("Select three spots to place Cruiser");
+                b.Text = "Cr";
+                CruiserSet += 1;
+            }
+            else if (BattleshipSet < 4)
+            {
+                MessageBox.Show("Select three spots to place Battleship");
+                b.Text = "B";
+                BattleshipSet += 1;
+            }
+            else if (CarrierSet < 5)
+            {
+                MessageBox.Show("Select three spots to place Carrier");
+                b.Text = "Ca";
+                CarrierSet += 1;
+            }
+            else
+            {
+                DisableSetShipEventHandler = true;
+            }
+        }
     }
 }

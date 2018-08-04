@@ -304,14 +304,14 @@
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -336,6 +336,7 @@
             this.MyBoard_A10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A10.TabIndex = 1;
             this.MyBoard_A10.UseVisualStyleBackColor = true;
+            this.MyBoard_A10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B10
             // 
@@ -344,6 +345,7 @@
             this.MyBoard_B10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B10.TabIndex = 2;
             this.MyBoard_B10.UseVisualStyleBackColor = true;
+            this.MyBoard_B10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C10
             // 
@@ -352,6 +354,7 @@
             this.MyBoard_C10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C10.TabIndex = 3;
             this.MyBoard_C10.UseVisualStyleBackColor = true;
+            this.MyBoard_C10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D10
             // 
@@ -360,6 +363,7 @@
             this.MyBoard_D10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D10.TabIndex = 4;
             this.MyBoard_D10.UseVisualStyleBackColor = true;
+            this.MyBoard_D10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E10
             // 
@@ -368,6 +372,7 @@
             this.MyBoard_E10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E10.TabIndex = 5;
             this.MyBoard_E10.UseVisualStyleBackColor = true;
+            this.MyBoard_E10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F10
             // 
@@ -376,6 +381,7 @@
             this.MyBoard_F10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F10.TabIndex = 6;
             this.MyBoard_F10.UseVisualStyleBackColor = true;
+            this.MyBoard_F10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G10
             // 
@@ -384,6 +390,7 @@
             this.MyBoard_G10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G10.TabIndex = 7;
             this.MyBoard_G10.UseVisualStyleBackColor = true;
+            this.MyBoard_G10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H10
             // 
@@ -392,6 +399,7 @@
             this.MyBoard_H10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H10.TabIndex = 8;
             this.MyBoard_H10.UseVisualStyleBackColor = true;
+            this.MyBoard_H10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I10
             // 
@@ -400,6 +408,7 @@
             this.MyBoard_I10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I10.TabIndex = 9;
             this.MyBoard_I10.UseVisualStyleBackColor = true;
+            this.MyBoard_I10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J10
             // 
@@ -408,6 +417,7 @@
             this.MyBoard_J10.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J10.TabIndex = 10;
             this.MyBoard_J10.UseVisualStyleBackColor = true;
+            this.MyBoard_J10.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A9
             // 
@@ -416,6 +426,7 @@
             this.MyBoard_A9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A9.TabIndex = 11;
             this.MyBoard_A9.UseVisualStyleBackColor = true;
+            this.MyBoard_A9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A8
             // 
@@ -424,6 +435,7 @@
             this.MyBoard_A8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A8.TabIndex = 12;
             this.MyBoard_A8.UseVisualStyleBackColor = true;
+            this.MyBoard_A8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A7
             // 
@@ -432,6 +444,7 @@
             this.MyBoard_A7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A7.TabIndex = 13;
             this.MyBoard_A7.UseVisualStyleBackColor = true;
+            this.MyBoard_A7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A6
             // 
@@ -440,6 +453,7 @@
             this.MyBoard_A6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A6.TabIndex = 14;
             this.MyBoard_A6.UseVisualStyleBackColor = true;
+            this.MyBoard_A6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A5
             // 
@@ -448,6 +462,7 @@
             this.MyBoard_A5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A5.TabIndex = 15;
             this.MyBoard_A5.UseVisualStyleBackColor = true;
+            this.MyBoard_A5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A4
             // 
@@ -456,6 +471,7 @@
             this.MyBoard_A4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A4.TabIndex = 16;
             this.MyBoard_A4.UseVisualStyleBackColor = true;
+            this.MyBoard_A4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A3
             // 
@@ -464,6 +480,7 @@
             this.MyBoard_A3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A3.TabIndex = 17;
             this.MyBoard_A3.UseVisualStyleBackColor = true;
+            this.MyBoard_A3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A2
             // 
@@ -472,6 +489,7 @@
             this.MyBoard_A2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A2.TabIndex = 18;
             this.MyBoard_A2.UseVisualStyleBackColor = true;
+            this.MyBoard_A2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_A1
             // 
@@ -481,6 +499,7 @@
             this.MyBoard_A1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_A1.TabIndex = 19;
             this.MyBoard_A1.UseVisualStyleBackColor = true;
+            this.MyBoard_A1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B1
             // 
@@ -489,6 +508,7 @@
             this.MyBoard_B1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B1.TabIndex = 20;
             this.MyBoard_B1.UseVisualStyleBackColor = true;
+            this.MyBoard_B1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C1
             // 
@@ -497,6 +517,7 @@
             this.MyBoard_C1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C1.TabIndex = 21;
             this.MyBoard_C1.UseVisualStyleBackColor = true;
+            this.MyBoard_C1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D1
             // 
@@ -505,6 +526,7 @@
             this.MyBoard_D1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D1.TabIndex = 22;
             this.MyBoard_D1.UseVisualStyleBackColor = true;
+            this.MyBoard_D1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E1
             // 
@@ -513,6 +535,7 @@
             this.MyBoard_E1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E1.TabIndex = 23;
             this.MyBoard_E1.UseVisualStyleBackColor = true;
+            this.MyBoard_E1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F1
             // 
@@ -521,6 +544,7 @@
             this.MyBoard_F1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F1.TabIndex = 24;
             this.MyBoard_F1.UseVisualStyleBackColor = true;
+            this.MyBoard_F1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G1
             // 
@@ -529,6 +553,7 @@
             this.MyBoard_G1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G1.TabIndex = 25;
             this.MyBoard_G1.UseVisualStyleBackColor = true;
+            this.MyBoard_G1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H1
             // 
@@ -537,6 +562,7 @@
             this.MyBoard_H1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H1.TabIndex = 26;
             this.MyBoard_H1.UseVisualStyleBackColor = true;
+            this.MyBoard_H1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I1
             // 
@@ -545,6 +571,7 @@
             this.MyBoard_I1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I1.TabIndex = 27;
             this.MyBoard_I1.UseVisualStyleBackColor = true;
+            this.MyBoard_I1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J1
             // 
@@ -553,6 +580,7 @@
             this.MyBoard_J1.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J1.TabIndex = 28;
             this.MyBoard_J1.UseVisualStyleBackColor = true;
+            this.MyBoard_J1.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J2
             // 
@@ -561,6 +589,7 @@
             this.MyBoard_J2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J2.TabIndex = 29;
             this.MyBoard_J2.UseVisualStyleBackColor = true;
+            this.MyBoard_J2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J3
             // 
@@ -569,6 +598,7 @@
             this.MyBoard_J3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J3.TabIndex = 30;
             this.MyBoard_J3.UseVisualStyleBackColor = true;
+            this.MyBoard_J3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J4
             // 
@@ -577,6 +607,7 @@
             this.MyBoard_J4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J4.TabIndex = 31;
             this.MyBoard_J4.UseVisualStyleBackColor = true;
+            this.MyBoard_J4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J5
             // 
@@ -585,6 +616,7 @@
             this.MyBoard_J5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J5.TabIndex = 32;
             this.MyBoard_J5.UseVisualStyleBackColor = true;
+            this.MyBoard_J5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J6
             // 
@@ -593,6 +625,7 @@
             this.MyBoard_J6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J6.TabIndex = 33;
             this.MyBoard_J6.UseVisualStyleBackColor = true;
+            this.MyBoard_J6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J7
             // 
@@ -601,6 +634,7 @@
             this.MyBoard_J7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J7.TabIndex = 34;
             this.MyBoard_J7.UseVisualStyleBackColor = true;
+            this.MyBoard_J7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J8
             // 
@@ -609,6 +643,7 @@
             this.MyBoard_J8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J8.TabIndex = 35;
             this.MyBoard_J8.UseVisualStyleBackColor = true;
+            this.MyBoard_J8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_J9
             // 
@@ -617,6 +652,7 @@
             this.MyBoard_J9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_J9.TabIndex = 36;
             this.MyBoard_J9.UseVisualStyleBackColor = true;
+            this.MyBoard_J9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B9
             // 
@@ -625,6 +661,7 @@
             this.MyBoard_B9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B9.TabIndex = 40;
             this.MyBoard_B9.UseVisualStyleBackColor = true;
+            this.MyBoard_B9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C9
             // 
@@ -633,6 +670,7 @@
             this.MyBoard_C9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C9.TabIndex = 41;
             this.MyBoard_C9.UseVisualStyleBackColor = true;
+            this.MyBoard_C9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D9
             // 
@@ -641,6 +679,7 @@
             this.MyBoard_D9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D9.TabIndex = 42;
             this.MyBoard_D9.UseVisualStyleBackColor = true;
+            this.MyBoard_D9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E9
             // 
@@ -649,6 +688,7 @@
             this.MyBoard_E9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E9.TabIndex = 43;
             this.MyBoard_E9.UseVisualStyleBackColor = true;
+            this.MyBoard_E9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F9
             // 
@@ -657,6 +697,7 @@
             this.MyBoard_F9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F9.TabIndex = 44;
             this.MyBoard_F9.UseVisualStyleBackColor = true;
+            this.MyBoard_F9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G9
             // 
@@ -665,6 +706,7 @@
             this.MyBoard_G9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G9.TabIndex = 45;
             this.MyBoard_G9.UseVisualStyleBackColor = true;
+            this.MyBoard_G9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H9
             // 
@@ -673,6 +715,7 @@
             this.MyBoard_H9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H9.TabIndex = 46;
             this.MyBoard_H9.UseVisualStyleBackColor = true;
+            this.MyBoard_H9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I9
             // 
@@ -681,6 +724,7 @@
             this.MyBoard_I9.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I9.TabIndex = 47;
             this.MyBoard_I9.UseVisualStyleBackColor = true;
+            this.MyBoard_I9.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B8
             // 
@@ -689,6 +733,7 @@
             this.MyBoard_B8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B8.TabIndex = 48;
             this.MyBoard_B8.UseVisualStyleBackColor = true;
+            this.MyBoard_B8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C8
             // 
@@ -697,6 +742,7 @@
             this.MyBoard_C8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C8.TabIndex = 49;
             this.MyBoard_C8.UseVisualStyleBackColor = true;
+            this.MyBoard_C8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E8
             // 
@@ -705,6 +751,7 @@
             this.MyBoard_E8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E8.TabIndex = 50;
             this.MyBoard_E8.UseVisualStyleBackColor = true;
+            this.MyBoard_E8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D8
             // 
@@ -713,6 +760,7 @@
             this.MyBoard_D8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D8.TabIndex = 51;
             this.MyBoard_D8.UseVisualStyleBackColor = true;
+            this.MyBoard_D8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F8
             // 
@@ -721,6 +769,7 @@
             this.MyBoard_F8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F8.TabIndex = 52;
             this.MyBoard_F8.UseVisualStyleBackColor = true;
+            this.MyBoard_F8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G8
             // 
@@ -729,6 +778,7 @@
             this.MyBoard_G8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G8.TabIndex = 53;
             this.MyBoard_G8.UseVisualStyleBackColor = true;
+            this.MyBoard_G8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H8
             // 
@@ -737,6 +787,7 @@
             this.MyBoard_H8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H8.TabIndex = 54;
             this.MyBoard_H8.UseVisualStyleBackColor = true;
+            this.MyBoard_H8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I8
             // 
@@ -745,6 +796,7 @@
             this.MyBoard_I8.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I8.TabIndex = 55;
             this.MyBoard_I8.UseVisualStyleBackColor = true;
+            this.MyBoard_I8.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B7
             // 
@@ -753,6 +805,7 @@
             this.MyBoard_B7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B7.TabIndex = 56;
             this.MyBoard_B7.UseVisualStyleBackColor = true;
+            this.MyBoard_B7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C7
             // 
@@ -761,6 +814,7 @@
             this.MyBoard_C7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C7.TabIndex = 57;
             this.MyBoard_C7.UseVisualStyleBackColor = true;
+            this.MyBoard_C7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E7
             // 
@@ -769,6 +823,7 @@
             this.MyBoard_E7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E7.TabIndex = 58;
             this.MyBoard_E7.UseVisualStyleBackColor = true;
+            this.MyBoard_E7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D7
             // 
@@ -777,6 +832,7 @@
             this.MyBoard_D7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D7.TabIndex = 59;
             this.MyBoard_D7.UseVisualStyleBackColor = true;
+            this.MyBoard_D7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F7
             // 
@@ -785,6 +841,7 @@
             this.MyBoard_F7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F7.TabIndex = 60;
             this.MyBoard_F7.UseVisualStyleBackColor = true;
+            this.MyBoard_F7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G7
             // 
@@ -793,6 +850,7 @@
             this.MyBoard_G7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G7.TabIndex = 61;
             this.MyBoard_G7.UseVisualStyleBackColor = true;
+            this.MyBoard_G7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H7
             // 
@@ -801,6 +859,7 @@
             this.MyBoard_H7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H7.TabIndex = 62;
             this.MyBoard_H7.UseVisualStyleBackColor = true;
+            this.MyBoard_H7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I7
             // 
@@ -809,6 +868,7 @@
             this.MyBoard_I7.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I7.TabIndex = 63;
             this.MyBoard_I7.UseVisualStyleBackColor = true;
+            this.MyBoard_I7.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B6
             // 
@@ -817,6 +877,7 @@
             this.MyBoard_B6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B6.TabIndex = 64;
             this.MyBoard_B6.UseVisualStyleBackColor = true;
+            this.MyBoard_B6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C6
             // 
@@ -825,6 +886,7 @@
             this.MyBoard_C6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C6.TabIndex = 65;
             this.MyBoard_C6.UseVisualStyleBackColor = true;
+            this.MyBoard_C6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D6
             // 
@@ -833,6 +895,7 @@
             this.MyBoard_D6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D6.TabIndex = 66;
             this.MyBoard_D6.UseVisualStyleBackColor = true;
+            this.MyBoard_D6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E6
             // 
@@ -841,6 +904,7 @@
             this.MyBoard_E6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E6.TabIndex = 67;
             this.MyBoard_E6.UseVisualStyleBackColor = true;
+            this.MyBoard_E6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F6
             // 
@@ -849,6 +913,7 @@
             this.MyBoard_F6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F6.TabIndex = 68;
             this.MyBoard_F6.UseVisualStyleBackColor = true;
+            this.MyBoard_F6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G6
             // 
@@ -857,6 +922,7 @@
             this.MyBoard_G6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G6.TabIndex = 69;
             this.MyBoard_G6.UseVisualStyleBackColor = true;
+            this.MyBoard_G6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H6
             // 
@@ -865,6 +931,7 @@
             this.MyBoard_H6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H6.TabIndex = 70;
             this.MyBoard_H6.UseVisualStyleBackColor = true;
+            this.MyBoard_H6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I6
             // 
@@ -873,6 +940,7 @@
             this.MyBoard_I6.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I6.TabIndex = 71;
             this.MyBoard_I6.UseVisualStyleBackColor = true;
+            this.MyBoard_I6.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B5
             // 
@@ -881,6 +949,7 @@
             this.MyBoard_B5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B5.TabIndex = 72;
             this.MyBoard_B5.UseVisualStyleBackColor = true;
+            this.MyBoard_B5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C5
             // 
@@ -889,6 +958,7 @@
             this.MyBoard_C5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C5.TabIndex = 73;
             this.MyBoard_C5.UseVisualStyleBackColor = true;
+            this.MyBoard_C5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D4
             // 
@@ -897,6 +967,7 @@
             this.MyBoard_D4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D4.TabIndex = 74;
             this.MyBoard_D4.UseVisualStyleBackColor = true;
+            this.MyBoard_D4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C4
             // 
@@ -905,6 +976,7 @@
             this.MyBoard_C4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C4.TabIndex = 75;
             this.MyBoard_C4.UseVisualStyleBackColor = true;
+            this.MyBoard_C4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B4
             // 
@@ -913,6 +985,7 @@
             this.MyBoard_B4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B4.TabIndex = 76;
             this.MyBoard_B4.UseVisualStyleBackColor = true;
+            this.MyBoard_B4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I5
             // 
@@ -921,6 +994,7 @@
             this.MyBoard_I5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I5.TabIndex = 77;
             this.MyBoard_I5.UseVisualStyleBackColor = true;
+            this.MyBoard_I5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H5
             // 
@@ -929,6 +1003,7 @@
             this.MyBoard_H5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H5.TabIndex = 78;
             this.MyBoard_H5.UseVisualStyleBackColor = true;
+            this.MyBoard_H5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G5
             // 
@@ -937,6 +1012,7 @@
             this.MyBoard_G5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G5.TabIndex = 79;
             this.MyBoard_G5.UseVisualStyleBackColor = true;
+            this.MyBoard_G5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F5
             // 
@@ -945,6 +1021,7 @@
             this.MyBoard_F5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F5.TabIndex = 80;
             this.MyBoard_F5.UseVisualStyleBackColor = true;
+            this.MyBoard_F5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E5
             // 
@@ -953,6 +1030,7 @@
             this.MyBoard_E5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E5.TabIndex = 81;
             this.MyBoard_E5.UseVisualStyleBackColor = true;
+            this.MyBoard_E5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D5
             // 
@@ -961,6 +1039,7 @@
             this.MyBoard_D5.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D5.TabIndex = 82;
             this.MyBoard_D5.UseVisualStyleBackColor = true;
+            this.MyBoard_D5.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I4
             // 
@@ -969,6 +1048,7 @@
             this.MyBoard_I4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I4.TabIndex = 83;
             this.MyBoard_I4.UseVisualStyleBackColor = true;
+            this.MyBoard_I4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H4
             // 
@@ -977,6 +1057,7 @@
             this.MyBoard_H4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H4.TabIndex = 84;
             this.MyBoard_H4.UseVisualStyleBackColor = true;
+            this.MyBoard_H4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G4
             // 
@@ -985,6 +1066,7 @@
             this.MyBoard_G4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G4.TabIndex = 85;
             this.MyBoard_G4.UseVisualStyleBackColor = true;
+            this.MyBoard_G4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F4
             // 
@@ -993,6 +1075,7 @@
             this.MyBoard_F4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F4.TabIndex = 86;
             this.MyBoard_F4.UseVisualStyleBackColor = true;
+            this.MyBoard_F4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E4
             // 
@@ -1001,6 +1084,7 @@
             this.MyBoard_E4.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E4.TabIndex = 87;
             this.MyBoard_E4.UseVisualStyleBackColor = true;
+            this.MyBoard_E4.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I3
             // 
@@ -1009,6 +1093,7 @@
             this.MyBoard_I3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I3.TabIndex = 88;
             this.MyBoard_I3.UseVisualStyleBackColor = true;
+            this.MyBoard_I3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H3
             // 
@@ -1017,6 +1102,7 @@
             this.MyBoard_H3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H3.TabIndex = 89;
             this.MyBoard_H3.UseVisualStyleBackColor = true;
+            this.MyBoard_H3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G3
             // 
@@ -1025,6 +1111,7 @@
             this.MyBoard_G3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G3.TabIndex = 90;
             this.MyBoard_G3.UseVisualStyleBackColor = true;
+            this.MyBoard_G3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F3
             // 
@@ -1033,6 +1120,7 @@
             this.MyBoard_F3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F3.TabIndex = 91;
             this.MyBoard_F3.UseVisualStyleBackColor = true;
+            this.MyBoard_F3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E3
             // 
@@ -1041,6 +1129,7 @@
             this.MyBoard_E3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E3.TabIndex = 92;
             this.MyBoard_E3.UseVisualStyleBackColor = true;
+            this.MyBoard_E3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D3
             // 
@@ -1049,6 +1138,7 @@
             this.MyBoard_D3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D3.TabIndex = 93;
             this.MyBoard_D3.UseVisualStyleBackColor = true;
+            this.MyBoard_D3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C3
             // 
@@ -1057,6 +1147,7 @@
             this.MyBoard_C3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C3.TabIndex = 94;
             this.MyBoard_C3.UseVisualStyleBackColor = true;
+            this.MyBoard_C3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B3
             // 
@@ -1065,6 +1156,7 @@
             this.MyBoard_B3.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B3.TabIndex = 95;
             this.MyBoard_B3.UseVisualStyleBackColor = true;
+            this.MyBoard_B3.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_I2
             // 
@@ -1073,6 +1165,7 @@
             this.MyBoard_I2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_I2.TabIndex = 96;
             this.MyBoard_I2.UseVisualStyleBackColor = true;
+            this.MyBoard_I2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_H2
             // 
@@ -1081,6 +1174,7 @@
             this.MyBoard_H2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_H2.TabIndex = 97;
             this.MyBoard_H2.UseVisualStyleBackColor = true;
+            this.MyBoard_H2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_G2
             // 
@@ -1089,6 +1183,7 @@
             this.MyBoard_G2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_G2.TabIndex = 98;
             this.MyBoard_G2.UseVisualStyleBackColor = true;
+            this.MyBoard_G2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_F2
             // 
@@ -1097,6 +1192,7 @@
             this.MyBoard_F2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_F2.TabIndex = 99;
             this.MyBoard_F2.UseVisualStyleBackColor = true;
+            this.MyBoard_F2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_E2
             // 
@@ -1105,6 +1201,7 @@
             this.MyBoard_E2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_E2.TabIndex = 100;
             this.MyBoard_E2.UseVisualStyleBackColor = true;
+            this.MyBoard_E2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_D2
             // 
@@ -1113,6 +1210,7 @@
             this.MyBoard_D2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_D2.TabIndex = 101;
             this.MyBoard_D2.UseVisualStyleBackColor = true;
+            this.MyBoard_D2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_C2
             // 
@@ -1121,6 +1219,7 @@
             this.MyBoard_C2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_C2.TabIndex = 102;
             this.MyBoard_C2.UseVisualStyleBackColor = true;
+            this.MyBoard_C2.Click += new System.EventHandler(this.SetShips);
             // 
             // MyBoard_B2
             // 
@@ -1129,6 +1228,7 @@
             this.MyBoard_B2.Size = new System.Drawing.Size(58, 53);
             this.MyBoard_B2.TabIndex = 103;
             this.MyBoard_B2.UseVisualStyleBackColor = true;
+            this.MyBoard_B2.Click += new System.EventHandler(this.SetShips);
             // 
             // EnemyBoard_A10
             // 
@@ -1938,6 +2038,7 @@
             this.MyBoard_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MyBoard_Textbox.Location = new System.Drawing.Point(96, 27);
             this.MyBoard_Textbox.Name = "MyBoard_Textbox";
+            this.MyBoard_Textbox.ReadOnly = true;
             this.MyBoard_Textbox.Size = new System.Drawing.Size(553, 47);
             this.MyBoard_Textbox.TabIndex = 204;
             this.MyBoard_Textbox.Text = "My Board";
@@ -1949,6 +2050,7 @@
             this.EnemyBoard_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EnemyBoard_Textbox.Location = new System.Drawing.Point(809, 27);
             this.EnemyBoard_Textbox.Name = "EnemyBoard_Textbox";
+            this.EnemyBoard_Textbox.ReadOnly = true;
             this.EnemyBoard_Textbox.Size = new System.Drawing.Size(552, 47);
             this.EnemyBoard_Textbox.TabIndex = 207;
             this.EnemyBoard_Textbox.Text = "Enemy Board";
@@ -1961,6 +2063,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(54, 84);
             this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(58, 13);
             this.textBox2.TabIndex = 208;
             this.textBox2.Text = "A";
@@ -1973,6 +2076,7 @@
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(118, 84);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(58, 13);
             this.textBox3.TabIndex = 209;
             this.textBox3.Text = "B";
@@ -1985,6 +2089,7 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(182, 84);
             this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
             this.textBox5.Size = new System.Drawing.Size(58, 13);
             this.textBox5.TabIndex = 210;
             this.textBox5.Text = "C";
@@ -1997,6 +2102,7 @@
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(246, 84);
             this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
             this.textBox6.Size = new System.Drawing.Size(58, 13);
             this.textBox6.TabIndex = 211;
             this.textBox6.Text = "D";
@@ -2009,6 +2115,7 @@
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(310, 84);
             this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
             this.textBox7.Size = new System.Drawing.Size(58, 13);
             this.textBox7.TabIndex = 212;
             this.textBox7.Text = "E";
@@ -2021,6 +2128,7 @@
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox8.Location = new System.Drawing.Point(374, 84);
             this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
             this.textBox8.Size = new System.Drawing.Size(58, 13);
             this.textBox8.TabIndex = 213;
             this.textBox8.Text = "F";
@@ -2033,6 +2141,7 @@
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(438, 84);
             this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
             this.textBox9.Size = new System.Drawing.Size(58, 13);
             this.textBox9.TabIndex = 214;
             this.textBox9.Text = "G";
@@ -2045,6 +2154,7 @@
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox10.Location = new System.Drawing.Point(502, 84);
             this.textBox10.Name = "textBox10";
+            this.textBox10.ReadOnly = true;
             this.textBox10.Size = new System.Drawing.Size(58, 13);
             this.textBox10.TabIndex = 215;
             this.textBox10.Text = "H";
@@ -2057,6 +2167,7 @@
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox11.Location = new System.Drawing.Point(566, 84);
             this.textBox11.Name = "textBox11";
+            this.textBox11.ReadOnly = true;
             this.textBox11.Size = new System.Drawing.Size(58, 13);
             this.textBox11.TabIndex = 216;
             this.textBox11.Text = "I";
@@ -2069,6 +2180,7 @@
             this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox12.Location = new System.Drawing.Point(630, 84);
             this.textBox12.Name = "textBox12";
+            this.textBox12.ReadOnly = true;
             this.textBox12.Size = new System.Drawing.Size(58, 13);
             this.textBox12.TabIndex = 217;
             this.textBox12.Text = "J";
@@ -2081,6 +2193,7 @@
             this.textBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox13.Location = new System.Drawing.Point(771, 84);
             this.textBox13.Name = "textBox13";
+            this.textBox13.ReadOnly = true;
             this.textBox13.Size = new System.Drawing.Size(58, 13);
             this.textBox13.TabIndex = 218;
             this.textBox13.Text = "A";
@@ -2093,6 +2206,7 @@
             this.textBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox14.Location = new System.Drawing.Point(835, 84);
             this.textBox14.Name = "textBox14";
+            this.textBox14.ReadOnly = true;
             this.textBox14.Size = new System.Drawing.Size(58, 13);
             this.textBox14.TabIndex = 219;
             this.textBox14.Text = "B";
@@ -2105,6 +2219,7 @@
             this.textBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox15.Location = new System.Drawing.Point(899, 84);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(58, 13);
             this.textBox15.TabIndex = 220;
             this.textBox15.Text = "C";
@@ -2117,6 +2232,7 @@
             this.textBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox16.Location = new System.Drawing.Point(963, 84);
             this.textBox16.Name = "textBox16";
+            this.textBox16.ReadOnly = true;
             this.textBox16.Size = new System.Drawing.Size(58, 13);
             this.textBox16.TabIndex = 221;
             this.textBox16.Text = "D";
@@ -2129,6 +2245,7 @@
             this.textBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox17.Location = new System.Drawing.Point(1027, 84);
             this.textBox17.Name = "textBox17";
+            this.textBox17.ReadOnly = true;
             this.textBox17.Size = new System.Drawing.Size(58, 13);
             this.textBox17.TabIndex = 222;
             this.textBox17.Text = "E";
@@ -2141,6 +2258,7 @@
             this.textBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox18.Location = new System.Drawing.Point(1091, 84);
             this.textBox18.Name = "textBox18";
+            this.textBox18.ReadOnly = true;
             this.textBox18.Size = new System.Drawing.Size(58, 13);
             this.textBox18.TabIndex = 223;
             this.textBox18.Text = "F";
@@ -2153,6 +2271,7 @@
             this.textBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox19.Location = new System.Drawing.Point(1155, 84);
             this.textBox19.Name = "textBox19";
+            this.textBox19.ReadOnly = true;
             this.textBox19.Size = new System.Drawing.Size(58, 13);
             this.textBox19.TabIndex = 224;
             this.textBox19.Text = "G";
@@ -2165,6 +2284,7 @@
             this.textBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox20.Location = new System.Drawing.Point(1220, 84);
             this.textBox20.Name = "textBox20";
+            this.textBox20.ReadOnly = true;
             this.textBox20.Size = new System.Drawing.Size(58, 13);
             this.textBox20.TabIndex = 225;
             this.textBox20.Text = "H";
@@ -2177,6 +2297,7 @@
             this.textBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox21.Location = new System.Drawing.Point(1283, 84);
             this.textBox21.Name = "textBox21";
+            this.textBox21.ReadOnly = true;
             this.textBox21.Size = new System.Drawing.Size(58, 13);
             this.textBox21.TabIndex = 226;
             this.textBox21.Text = "I";
@@ -2189,6 +2310,7 @@
             this.textBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox22.Location = new System.Drawing.Point(1347, 84);
             this.textBox22.Name = "textBox22";
+            this.textBox22.ReadOnly = true;
             this.textBox22.Size = new System.Drawing.Size(58, 13);
             this.textBox22.TabIndex = 227;
             this.textBox22.Text = "J";
@@ -2201,6 +2323,7 @@
             this.textBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox23.Location = new System.Drawing.Point(733, 138);
             this.textBox23.Name = "textBox23";
+            this.textBox23.ReadOnly = true;
             this.textBox23.Size = new System.Drawing.Size(36, 13);
             this.textBox23.TabIndex = 228;
             this.textBox23.Text = "1";
@@ -2213,6 +2336,7 @@
             this.textBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox24.Location = new System.Drawing.Point(733, 197);
             this.textBox24.Name = "textBox24";
+            this.textBox24.ReadOnly = true;
             this.textBox24.Size = new System.Drawing.Size(36, 13);
             this.textBox24.TabIndex = 229;
             this.textBox24.Text = "2";
@@ -2225,6 +2349,7 @@
             this.textBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox25.Location = new System.Drawing.Point(733, 258);
             this.textBox25.Name = "textBox25";
+            this.textBox25.ReadOnly = true;
             this.textBox25.Size = new System.Drawing.Size(36, 13);
             this.textBox25.TabIndex = 230;
             this.textBox25.Text = "3";
@@ -2237,6 +2362,7 @@
             this.textBox26.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox26.Location = new System.Drawing.Point(733, 317);
             this.textBox26.Name = "textBox26";
+            this.textBox26.ReadOnly = true;
             this.textBox26.Size = new System.Drawing.Size(36, 13);
             this.textBox26.TabIndex = 231;
             this.textBox26.Text = "4";
@@ -2249,6 +2375,7 @@
             this.textBox27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox27.Location = new System.Drawing.Point(733, 376);
             this.textBox27.Name = "textBox27";
+            this.textBox27.ReadOnly = true;
             this.textBox27.Size = new System.Drawing.Size(36, 13);
             this.textBox27.TabIndex = 232;
             this.textBox27.Text = "5";
@@ -2261,6 +2388,7 @@
             this.textBox28.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox28.Location = new System.Drawing.Point(733, 434);
             this.textBox28.Name = "textBox28";
+            this.textBox28.ReadOnly = true;
             this.textBox28.Size = new System.Drawing.Size(36, 13);
             this.textBox28.TabIndex = 233;
             this.textBox28.Text = "6";
@@ -2273,6 +2401,7 @@
             this.textBox29.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox29.Location = new System.Drawing.Point(733, 493);
             this.textBox29.Name = "textBox29";
+            this.textBox29.ReadOnly = true;
             this.textBox29.Size = new System.Drawing.Size(36, 13);
             this.textBox29.TabIndex = 234;
             this.textBox29.Text = "7";
@@ -2285,6 +2414,7 @@
             this.textBox30.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox30.Location = new System.Drawing.Point(733, 552);
             this.textBox30.Name = "textBox30";
+            this.textBox30.ReadOnly = true;
             this.textBox30.Size = new System.Drawing.Size(36, 13);
             this.textBox30.TabIndex = 235;
             this.textBox30.Text = "8";
@@ -2297,6 +2427,7 @@
             this.textBox31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox31.Location = new System.Drawing.Point(733, 611);
             this.textBox31.Name = "textBox31";
+            this.textBox31.ReadOnly = true;
             this.textBox31.Size = new System.Drawing.Size(36, 13);
             this.textBox31.TabIndex = 236;
             this.textBox31.Text = "9";
@@ -2309,6 +2440,7 @@
             this.textBox32.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox32.Location = new System.Drawing.Point(729, 671);
             this.textBox32.Name = "textBox32";
+            this.textBox32.ReadOnly = true;
             this.textBox32.Size = new System.Drawing.Size(36, 13);
             this.textBox32.TabIndex = 237;
             this.textBox32.Text = "10";
@@ -2321,6 +2453,7 @@
             this.textBox33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox33.Location = new System.Drawing.Point(12, 138);
             this.textBox33.Name = "textBox33";
+            this.textBox33.ReadOnly = true;
             this.textBox33.Size = new System.Drawing.Size(36, 13);
             this.textBox33.TabIndex = 238;
             this.textBox33.Text = "1";
@@ -2333,6 +2466,7 @@
             this.textBox34.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox34.Location = new System.Drawing.Point(12, 197);
             this.textBox34.Name = "textBox34";
+            this.textBox34.ReadOnly = true;
             this.textBox34.Size = new System.Drawing.Size(36, 13);
             this.textBox34.TabIndex = 239;
             this.textBox34.Text = "2";
@@ -2345,6 +2479,7 @@
             this.textBox35.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox35.Location = new System.Drawing.Point(12, 258);
             this.textBox35.Name = "textBox35";
+            this.textBox35.ReadOnly = true;
             this.textBox35.Size = new System.Drawing.Size(36, 13);
             this.textBox35.TabIndex = 240;
             this.textBox35.Text = "3";
@@ -2357,6 +2492,7 @@
             this.textBox36.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox36.Location = new System.Drawing.Point(12, 316);
             this.textBox36.Name = "textBox36";
+            this.textBox36.ReadOnly = true;
             this.textBox36.Size = new System.Drawing.Size(36, 13);
             this.textBox36.TabIndex = 241;
             this.textBox36.Text = "4";
@@ -2369,6 +2505,7 @@
             this.textBox37.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox37.Location = new System.Drawing.Point(12, 375);
             this.textBox37.Name = "textBox37";
+            this.textBox37.ReadOnly = true;
             this.textBox37.Size = new System.Drawing.Size(36, 13);
             this.textBox37.TabIndex = 242;
             this.textBox37.Text = "5";
@@ -2381,6 +2518,7 @@
             this.textBox38.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox38.Location = new System.Drawing.Point(12, 434);
             this.textBox38.Name = "textBox38";
+            this.textBox38.ReadOnly = true;
             this.textBox38.Size = new System.Drawing.Size(36, 13);
             this.textBox38.TabIndex = 243;
             this.textBox38.Text = "6";
@@ -2393,6 +2531,7 @@
             this.textBox39.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox39.Location = new System.Drawing.Point(11, 493);
             this.textBox39.Name = "textBox39";
+            this.textBox39.ReadOnly = true;
             this.textBox39.Size = new System.Drawing.Size(36, 13);
             this.textBox39.TabIndex = 244;
             this.textBox39.Text = "7";
@@ -2405,6 +2544,7 @@
             this.textBox40.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox40.Location = new System.Drawing.Point(11, 552);
             this.textBox40.Name = "textBox40";
+            this.textBox40.ReadOnly = true;
             this.textBox40.Size = new System.Drawing.Size(36, 13);
             this.textBox40.TabIndex = 245;
             this.textBox40.Text = "8";
@@ -2417,6 +2557,7 @@
             this.textBox41.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox41.Location = new System.Drawing.Point(12, 611);
             this.textBox41.Name = "textBox41";
+            this.textBox41.ReadOnly = true;
             this.textBox41.Size = new System.Drawing.Size(36, 13);
             this.textBox41.TabIndex = 246;
             this.textBox41.Text = "9";
@@ -2429,6 +2570,7 @@
             this.textBox42.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox42.Location = new System.Drawing.Point(12, 671);
             this.textBox42.Name = "textBox42";
+            this.textBox42.ReadOnly = true;
             this.textBox42.Size = new System.Drawing.Size(36, 13);
             this.textBox42.TabIndex = 247;
             this.textBox42.Text = "10";
