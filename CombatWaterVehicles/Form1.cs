@@ -12,6 +12,21 @@ namespace CombatWaterVehicles
 {
     public partial class Form1 : Form
     {
+        private bool _turn = true; // true when its players turn
+
+        public bool Turn
+        {
+            get
+            {
+                return _turn;
+            }
+
+            set
+            {
+                _turn = value;
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -47,15 +62,13 @@ namespace CombatWaterVehicles
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    myGrid[i][j].Text = "" + i;
-                    enemyGrid[i][j].Text = "" + j;
+                    myGrid[i][j].Text = "O";
+                    myGrid[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+                    enemyGrid[i][j].Text = "O";
+                    enemyGrid[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
             }
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
         }
 
         public List<List<Button>> SetButtonsMyGrid()
@@ -311,5 +324,12 @@ namespace CombatWaterVehicles
 
             return enemyGrid;
         }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O indicates an Open spot\n\nX indicates a hit ship\n\nSet of X's in red indicate a sunken ship", "Help");
+        }
+
+        
     }
 }

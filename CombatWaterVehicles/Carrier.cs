@@ -16,7 +16,6 @@ namespace CombatWaterVehicles
             Type = "Carrier";
             Width = 5;
             Hits = 0;
-
         }
     }
 }
