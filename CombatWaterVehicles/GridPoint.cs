@@ -9,11 +9,11 @@ namespace CombatWaterVehicles
 {
     public class GridPoint
     {
-        private bool[][] _hit;
-        private string[][] _text = "";
-        private char[][] _hiddenShip;
+        private bool[,] _hit = new bool[10,10];
+        private string[,] _buttonText = new string[10,10];
+        private char[,] _hiddenShip = new char[10,10];
 
-        public bool[][] Hit
+        public bool[,] Hit
         {
             get
             {
@@ -25,19 +25,19 @@ namespace CombatWaterVehicles
             }
         }
 
-        public string[][] Text
+        public string[,] ButtonText
         {
             get
             {
-                return _text;
+                return _buttonText;
             }
             set
             {
-                _text = value;
+                _buttonText = value;
             }
         }
 
-        public char[][] HiddenShip
+        public char[,] HiddenShip
         {
             get
             {
@@ -58,9 +58,9 @@ namespace CombatWaterVehicles
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    Text[i][j] = "";
-                    Hit[i][j] = false;
-                    HiddenShip[i][j] = 'O';
+                    Hit[i,j] = false;
+                    ButtonText[i,j] = "";
+                    HiddenShip[i,j] = 'O';
                 }
             }
         }
@@ -75,8 +75,8 @@ namespace CombatWaterVehicles
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    Text[i][j] = "";
-                    Hit[i][j] = false;
+                    Hit[i,j] = false;
+                    ButtonText[i,j] = "";
                 }
             }
         }
@@ -95,10 +95,65 @@ namespace CombatWaterVehicles
             ships.Add(new Battleship());
             ships.Add(new Carrier());
 
+            Random random = new Random();
+
             foreach(var ship in ships)
             {
-                MessageBox.Show("Type " + ship.Type + "'s width is " + ship.Width + " and currently has " + ship.Hits + " hits");
+                bool shipsNeeded = true;
+
+                while (shipsNeeded)
+                {
+                    var column = random.Next(1, 11);
+                    var row = random.Next(1, 11);
+
+                    var orientation = random.Next(1, 101) % 2; // 0 will be vertical, 1 will be horizontal
+
+                    if (orientation == 1)
+                    {
+                        MessageBox.Show("Should be horizontal");
+                        column = random.Next(0, 11 - ship.Width);
+                        for (int i = 0; i < ship.Width; i++)
+                        {
+                            if (HiddenShip[row, column] == 'O')
+                            {
+                                MessageBox.Show("Before: \n" + "Row is " + row + "Column is " + column);
+                                enemyGrid[row][column].Text = "P";
+                                HiddenShip[row, column] = 'P';
+                                column++;
+                                MessageBox.Show("After: \n" + "Row is " + row + "Column is " + column);
+                            }
+                            else
+                            {
+                                continue;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Should be vertical");
+                        row = random.Next(0, 11 - ship.Width);
+                        for (int i = 0; i < ship.Width; i++)
+                        {
+                            if (HiddenShip[row, column] == 'O')
+                            {
+                                MessageBox.Show("Before: \n" + "Row is " + row + "Column is " + column);
+                                enemyGrid[row][column].Text = "P";
+                                HiddenShip[row, column] = 'P';
+                                row++;
+                                MessageBox.Show("After: \n" + "Row is " + row + "Column is " + column);
+                            }
+                            else
+                            {
+                                continue;
+                            }
+                        }
+                    }
+
+                    shipsNeeded = false;
+                }
             }
+            
+
 
 
         }
