@@ -12,7 +12,7 @@ namespace CombatWaterVehicles
 {
     public partial class Form1 : Form
     {
-        private bool _turn = true; // true when its players turn
+        private bool _whoseTurn = true; // true when its players turn
         private bool _disableSetShipEventHandler = false;
         private int _destroyerSet = 0;
         private int _submarineSet = 0;
@@ -20,16 +20,16 @@ namespace CombatWaterVehicles
         private int _battleshipSet = 0;
         private int _carrierSet = 0;
 
-        public bool Turn
+        public bool WhoseTurn
         {
             get
             {
-                return _turn;
+                return _whoseTurn;
             }
 
             set
             {
-                _turn = value;
+                _whoseTurn = value;
             }
         }
 
@@ -150,21 +150,131 @@ namespace CombatWaterVehicles
 
         private void StartGame_Click(object sender, EventArgs e)
         {
+            // will disable button after start game has been pressed
+            Button b = (Button)sender;
+            b.Enabled = false;
+
             DisableSetShipEventHandler = false;
 
-            List<List<Button>> myGrid = SetButtonsMyGrid();
-            List<List<Button>> enemyGrid = SetButtonsEnemyGrid();
+            List<List<Button>> myGridHolder = SetButtonsMyGrid();
+            List<List<Button>> enemyGridHolder = SetButtonsEnemyGrid();
 
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)
                 {
-                    myGrid[i][j].Text = "O";
-                    myGrid[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    myGridHolder[i][j].Text = "O";
+                    myGridHolder[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 
-                    enemyGrid[i][j].Text = "O";
-                    enemyGrid[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+                    enemyGridHolder[i][j].Text = "O";
+                    enemyGridHolder[i][j].Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
                 }
+            }
+
+            GridPoint enemyGrid = new GridPoint();
+            GridPoint myGrid = new GridPoint(myGridHolder);
+            
+
+            enemyGrid.SetEnemyShips(enemyGridHolder);
+
+            MessageBox.Show("Select two spots to place your Destroyer");
+        }
+
+        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("O indicates an Open spot\n\nX indicates a hit ship\n\nSet of X's in red indicate a sunken ship", "Help");
+        }
+
+        private void SetShips(object sender, EventArgs e)
+        {
+            List<List<Button>> myGrid = SetButtonsMyGrid();
+
+            Destroyer myDestroyer = new Destroyer();
+            Submarine mySubmarine = new Submarine();
+            Cruiser myCruiser = new Cruiser();
+            Battleship myBattleship = new Battleship();
+            Carrier myCarrier = new Carrier();
+
+            // will disable handler after ships are all placed
+            if (DisableSetShipEventHandler)
+            {
+                return;
+            }
+
+            Button b = (Button)sender;
+
+            if (DestroyerSet < myDestroyer.Width && b.Text == "O")
+            {
+                DestroyerSet += 1;
+                b.Text = "D";
+                if (DestroyerSet < myDestroyer.Width)
+                {
+                    MessageBox.Show("Select another spot to place Destroyer");
+                }
+                else
+                {
+                    MessageBox.Show("Select three spots to place Submarine");
+                }
+            }
+            else if (SubmarineSet < mySubmarine.Width && b.Text == "O")
+            {
+                SubmarineSet += 1;
+                b.Text = "S";
+                if (SubmarineSet < mySubmarine.Width)
+                {
+                    MessageBox.Show("Select another spot to place Submarine");
+                }
+                else
+                {
+                    MessageBox.Show("Select three spots to place Cruiser");
+                }
+                
+            }
+            else if (CruiserSet < myCruiser.Width && b.Text == "O")
+            {
+                CruiserSet += 1;
+                b.Text = "Cr";
+                if (CruiserSet < myCruiser.Width)
+                {
+                    MessageBox.Show("Select another spot to place Cruiser");
+                }
+                else
+                {
+                    MessageBox.Show("Select four spots to place Battleship");
+                }
+                
+            }
+            else if (BattleshipSet < myBattleship.Width && b.Text == "O")
+            {
+                
+                b.Text = "B";
+                BattleshipSet += 1;
+                if (BattleshipSet < myBattleship.Width)
+                {
+                    MessageBox.Show("Select another spot to place Battleship");
+                }
+                else
+                {
+                    MessageBox.Show("Select five spots to place Carrier");
+                }
+            }
+            else if (CarrierSet < myCarrier.Width && b.Text == "O")
+            {
+                
+                b.Text = "Ca";
+                CarrierSet += 1;
+                if (CarrierSet < myCarrier.Width)
+                {
+                    MessageBox.Show("Select another spot to place Carrier");
+                }
+                else
+                {
+                    MessageBox.Show("All ships have been placed.");
+                }
+            }
+            else
+            {
+                DisableSetShipEventHandler = true;
             }
         }
 
@@ -422,55 +532,6 @@ namespace CombatWaterVehicles
             return enemyGrid;
         }
 
-        private void helpToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("O indicates an Open spot\n\nX indicates a hit ship\n\nSet of X's in red indicate a sunken ship", "Help");
-        }
-
-        private void SetShips(object sender, EventArgs e)
-        {
-            // will disable handler after ships are all placed
-            if (DisableSetShipEventHandler)
-            {
-                return;
-            }
-
-            Button b = (Button)sender;
-
-            if (DestroyerSet < 2)
-            {
-                MessageBox.Show("Select two spots to place Destroyer");
-                b.Text = "D";
-                DestroyerSet += 1;
-            }
-            else if (SubmarineSet < 3)
-            {
-                MessageBox.Show("Select three spots to place Submarine");
-                b.Text = "S";
-                SubmarineSet += 1;
-            }
-            else if (CruiserSet < 3)
-            {
-                MessageBox.Show("Select three spots to place Cruiser");
-                b.Text = "Cr";
-                CruiserSet += 1;
-            }
-            else if (BattleshipSet < 4)
-            {
-                MessageBox.Show("Select three spots to place Battleship");
-                b.Text = "B";
-                BattleshipSet += 1;
-            }
-            else if (CarrierSet < 5)
-            {
-                MessageBox.Show("Select three spots to place Carrier");
-                b.Text = "Ca";
-                CarrierSet += 1;
-            }
-            else
-            {
-                DisableSetShipEventHandler = true;
-            }
-        }
+        
     }
 }

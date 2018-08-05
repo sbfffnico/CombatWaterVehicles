@@ -277,6 +277,8 @@
             this.textBox41 = new System.Windows.Forms.TextBox();
             this.textBox42 = new System.Windows.Forms.TextBox();
             this.StartGame = new System.Windows.Forms.Button();
+            this.Turn = new System.Windows.Forms.Label();
+            this.whose_Turn = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -2587,12 +2589,35 @@
             this.StartGame.UseVisualStyleBackColor = true;
             this.StartGame.Click += new System.EventHandler(this.StartGame_Click);
             // 
+            // Turn
+            // 
+            this.Turn.AutoSize = true;
+            this.Turn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Turn.Location = new System.Drawing.Point(704, 84);
+            this.Turn.Name = "Turn";
+            this.Turn.Size = new System.Drawing.Size(44, 19);
+            this.Turn.TabIndex = 249;
+            this.Turn.Text = "Turn";
+            // 
+            // whose_Turn
+            // 
+            this.whose_Turn.AutoSize = true;
+            this.whose_Turn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.whose_Turn.Location = new System.Drawing.Point(694, 101);
+            this.whose_Turn.Name = "whose_Turn";
+            this.whose_Turn.Size = new System.Drawing.Size(67, 17);
+            this.whose_Turn.TabIndex = 250;
+            this.whose_Turn.Text = "My Turn";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ClientSize = new System.Drawing.Size(1439, 718);
+            this.Controls.Add(this.whose_Turn);
+            this.Controls.Add(this.Turn);
             this.Controls.Add(this.StartGame);
             this.Controls.Add(this.textBox42);
             this.Controls.Add(this.textBox41);
@@ -3102,6 +3127,8 @@
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button StartGame;
+        private System.Windows.Forms.Label Turn;
+        private System.Windows.Forms.Label whose_Turn;
     }
 }
 
