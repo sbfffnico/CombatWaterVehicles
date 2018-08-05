@@ -97,12 +97,16 @@ namespace CombatWaterVehicles
 
             Random random = new Random();
 
+            
+
             foreach(var ship in ships)
             {
                 bool shipsNeeded = true;
 
                 while (shipsNeeded)
                 {
+                    bool _restartForTakenSpot = false;
+
                     var column = random.Next(0, 10);
                     var row = random.Next(0, 10);
 
@@ -111,6 +115,21 @@ namespace CombatWaterVehicles
                     if (orientation == 1)
                     {
                         column = random.Next(0, 10 - ship.Width);
+
+                        for (int i = column ; i <= column + ship.Width; i++)
+                        {
+                            if (HiddenShip[row, i] != 'O')
+                            {
+                                _restartForTakenSpot = !_restartForTakenSpot;
+                                break;
+                            }
+                        }
+
+                        if (_restartForTakenSpot)
+                        {
+                            continue;
+                        }
+
                         for (int i = 0; i < ship.Width; i++)
                         {
                             if (HiddenShip[row, column] == 'O')
@@ -128,6 +147,21 @@ namespace CombatWaterVehicles
                     else
                     {
                         row = random.Next(0, 10 - ship.Width);
+
+                        for (int i = row; i <= row + ship.Width; i++)
+                        {
+                            if (HiddenShip[i, column] != 'O')
+                            {
+                                _restartForTakenSpot = !_restartForTakenSpot;
+                                break;
+                            }
+                        }
+
+                        if (_restartForTakenSpot)
+                        {
+                            continue;
+                        }
+
                         for (int i = 0; i < ship.Width; i++)
                         {
                             if (HiddenShip[row, column] == 'O')
