@@ -103,24 +103,21 @@ namespace CombatWaterVehicles
 
                 while (shipsNeeded)
                 {
-                    var column = random.Next(1, 11);
-                    var row = random.Next(1, 11);
+                    var column = random.Next(0, 10);
+                    var row = random.Next(0, 10);
 
                     var orientation = random.Next(1, 101) % 2; // 0 will be vertical, 1 will be horizontal
 
                     if (orientation == 1)
                     {
-                        MessageBox.Show("Should be horizontal");
-                        column = random.Next(0, 11 - ship.Width);
+                        column = random.Next(0, 10 - ship.Width);
                         for (int i = 0; i < ship.Width; i++)
                         {
                             if (HiddenShip[row, column] == 'O')
                             {
-                                MessageBox.Show("Before: \n" + "Row is " + row + "Column is " + column);
-                                enemyGrid[row][column].Text = "P";
+                                enemyGrid[row][column].Text = "P"; // visually represents randomized enemy grid
                                 HiddenShip[row, column] = 'P';
                                 column++;
-                                MessageBox.Show("After: \n" + "Row is " + row + "Column is " + column);
                             }
                             else
                             {
@@ -130,17 +127,14 @@ namespace CombatWaterVehicles
                     }
                     else
                     {
-                        MessageBox.Show("Should be vertical");
-                        row = random.Next(0, 11 - ship.Width);
+                        row = random.Next(0, 10 - ship.Width);
                         for (int i = 0; i < ship.Width; i++)
                         {
                             if (HiddenShip[row, column] == 'O')
                             {
-                                MessageBox.Show("Before: \n" + "Row is " + row + "Column is " + column);
-                                enemyGrid[row][column].Text = "P";
+                                enemyGrid[row][column].Text = "P"; // visually represents randomized enemy grid
                                 HiddenShip[row, column] = 'P';
                                 row++;
-                                MessageBox.Show("After: \n" + "Row is " + row + "Column is " + column);
                             }
                             else
                             {
